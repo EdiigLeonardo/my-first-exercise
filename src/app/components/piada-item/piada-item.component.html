@@ -1,0 +1,14 @@
+<div class="piada">
+  <div class="piada-top">
+    <h3>{{piada.description}}</h3>
+    <span
+      [ngStyle]="{'color':color}">{{piada.author | uppercase}}</span>
+  </div>
+  <div class="piada-value">
+    <span> percentage: {{piada.id| percent}} Value: {{piada.id | currency: "EUR"}}</span>
+    <span *ngIf="piada.markedAsFavorite">
+     <fa-icon [icon]="faStar" [ngStyle]="{'color':iconColor}"></fa-icon>
+  </span>
+  </div>
+</div>
+<p>{{date | date:'dd/MM/yy'}}</p>

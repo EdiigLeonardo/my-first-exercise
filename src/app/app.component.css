@@ -1,0 +1,11 @@
+.body{
+    background: #f5fdfd;
+}
+
+.centre_{
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    justify-content: center;
+    flex-direction: column;
+}
